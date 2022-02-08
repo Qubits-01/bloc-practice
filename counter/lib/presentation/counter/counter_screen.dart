@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'counter_view.dart';
 
-import '../../logic/counter/cubits/counter_cubit.dart';
+import 'counter.dart';
 
 class CounterScreen extends StatelessWidget {
   const CounterScreen({Key? key}) : super(key: key);

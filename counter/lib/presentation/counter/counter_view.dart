@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../logic/counter/cubits/counter_cubit.dart';
+import 'counter.dart';
 
 /// A [StatelessWidget] which reacts to the provided
 /// [CounterCubit] state and notifies it in response to user input.
@@ -35,6 +35,7 @@ class CounterView extends StatelessWidget {
             child: const Icon(Icons.add),
             onPressed: () => context.read<CounterCubit>().increment(),
           ),
+          const SizedBox(height: 10.0),
           FloatingActionButton(
             key: const Key('counterView_decrement_floatingActionButton'),
             child: const Icon(Icons.remove),
